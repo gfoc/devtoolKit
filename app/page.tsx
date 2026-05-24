@@ -6,7 +6,7 @@ const tools = [
   { icon: "FileJson", label: "CSV to JSON", desc: "Convert CSV files to clean JSON instantly. Supports custom delimiters and nested output.", href: "/tools/csv-to-json", badge: "Popular" },
   { icon: "Braces", label: "JSON Formatter", desc: "Beautify, minify, and validate JSON. Spot errors with clear inline highlighting.", href: "/tools/json-formatter", badge: null },
   { icon: "Regex", label: "Regex Tester", desc: "Test regular expressions live with match highlighting and plain-English explanations.", href: "/tools/regex-tester", badge: "Coming soon" },
-  { icon: "Hash", label: "Token Counter", desc: "Count LLM tokens for GPT, Claude, and Llama models before sending your prompt.", href: "/tools/token-counter", badge: "Coming soon" },
+  { icon: "Hash", label: "Token Counter", desc: "Count LLM tokens for GPT, Claude, and Llama models before sending your prompt.", href: "/tools/token-counter", badge: null },
 ];
 
 const features = [

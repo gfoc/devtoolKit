@@ -13,9 +13,9 @@ export default function Navbar() {
     }}>
       <div style={{ maxWidth: 1100, margin: "0 auto", padding: "0 24px", height: 56, display: "flex", alignItems: "center", justifyContent: "space-between" }}>
         <Link href="/" style={{ display: "flex", alignItems: "center", gap: 8, textDecoration: "none" }}>
-         
-            <img src="logo.png" alt="DevToolkit logo" style={{ width: 35, height: 35, borderRadius: 7, objectFit: "cover" }} />
-         
+          <div style={{ width: 30, height: 30, borderRadius: 8, background: "var(--accent)", display: "flex", alignItems: "center", justifyContent: "center" }}>
+            <Terminal size={16} color="#fff" />
+          </div>
           <span style={{ fontWeight: 700, fontSize: 16, color: "var(--text-primary)", letterSpacing: "-0.02em" }}>DevToolkit</span>
         </Link>
         <div style={{ display: "flex", alignItems: "center", gap: 4 }}>

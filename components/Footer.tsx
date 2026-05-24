@@ -34,9 +34,7 @@ export default function Footer() {
         </div>
       </div>
       <div style={{ borderTop: "1px solid var(--border)", padding: "16px 24px", textAlign: "center" }}>
-        <p className="text-sm text-muted-foreground">
-            &copy; {new Date().getFullYear()} ScholarBoard. All rights reserved.
-          </p>
+        <p style={{ fontSize: 12, color: "var(--text-muted)" }}>© {new Date().getFullYear()} DevToolkit. Built for developers, by developers.</p>
       </div>
     </footer>
   );

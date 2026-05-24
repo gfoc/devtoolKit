@@ -9,9 +9,9 @@ export const metadata: Metadata = {
 
 const tools = [
   { icon: FileJson, label: "CSV to JSON", desc: "Convert CSV to JSON with custom delimiters and output formats.", href: "/tools/csv-to-json", status: "live" },
-  { icon: Braces, label: "JSON Formatter", desc: "Beautify, minify, and validate JSON with error highlighting.", href: "/tools/json-formatter", status: "soon" },
+  { icon: Braces, label: "JSON Formatter", desc: "Beautify, minify, and validate JSON with error highlighting.", href: "/tools/json-formatter", status: "live" },
   { icon: Regex, label: "Regex Tester", desc: "Live regex testing with match highlighting and explanations.", href: "/tools/regex-tester", status: "soon" },
-  { icon: Hash, label: "Token Counter", desc: "Count tokens for GPT, Claude, and Llama models.", href: "/tools/token-counter", status: "soon" },
+  { icon: Hash, label: "Token Counter", desc: "Count tokens for GPT, Claude, and Llama models.", href: "/tools/token-counter", status: "live" },
 ];
 
 export default function ToolsPage() {
@@ -27,8 +27,8 @@ export default function ToolsPage() {
                 <div style={{ width: 36, height: 36, borderRadius: 9, background: "var(--accent-dim)", display: "flex", alignItems: "center", justifyContent: "center" }}>
                   <t.icon size={18} color="var(--accent)" />
                 </div>
-                {t.status === "soon" && <span style={{ fontSize: 11, padding: "2px 8px", borderRadius: 100, background: "var(--accent-dim)", color: "var(--accent)", fontWeight: 600 }}>Coming soon</span>}
-                {t.status === "live" && <span style={{ fontSize: 11, padding: "2px 8px", borderRadius: 100, background: "rgba(34,197,94,0.12)", color: "#22c55e", fontWeight: 600 }}>Live</span>}
+                    {t.status === "soon" && <span style={{ fontSize: 11, padding: "2px 8px", borderRadius: 100, background: "var(--accent-dim)", color: "var(--accent)", fontWeight: 600 }}>Coming soon</span>}
+                    {t.status === "live" && <span style={{ fontSize: 11, padding: "2px 8px", borderRadius: 100, background: "rgba(34,197,94,0.12)", color: "#22c55e", fontWeight: 600 }}>Live</span>}
               </div>
               <p style={{ fontWeight: 600, fontSize: 15, color: "var(--text-primary)", marginBottom: 6 }}>{t.label}</p>
               <p style={{ fontSize: 13, color: "var(--text-secondary)", lineHeight: 1.5 }}>{t.desc}</p>
